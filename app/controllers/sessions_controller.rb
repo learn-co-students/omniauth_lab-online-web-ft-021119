@@ -6,7 +6,13 @@ class SessionsController < ApplicationController
          user.image = auth['info']['image']
       end
       session[:user_id] = @user.id
-      redirect_to root_path
+      @user
+      redirect_to 'welcome/home'
+   end
+
+   def destroy
+      session.clear
+      redirect_to root_path, alert: "Logged out"
    end
 
    private
