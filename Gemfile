@@ -5,6 +5,9 @@ gem 'rails'
 gem 'bootsnap'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', '~>1.3.6'
+gem 'omniauth'
+gem 'omniauth-facebook'
+gem 'dotenv-rails'
 # Used to mock an https url
 gem 'thin'
 # Use SCSS for stylesheets
