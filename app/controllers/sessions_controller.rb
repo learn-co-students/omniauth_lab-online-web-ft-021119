@@ -11,6 +11,22 @@ class SessionsController < ApplicationController
     render 'welcome/home'
   end
 
+  #from video
+  # oauth_email = request.env["omniauth.email"]["email"]
+  # if @user = User.find_by(email: oauth_email)
+  #   #existing user
+  #   session[:user_id] = @user.id
+  #   redirect_to root_path
+  # else
+  #   @user = User.new(email: oauth_email)
+  #   if @user.save
+  #     session[:user_id] = @user.id
+  #     redirect_to root_path
+  #   else
+  #     @users.error.full_messages
+  #   end
+  # end
+  
   private
 
   def auth
