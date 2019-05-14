@@ -1,1 +1,14 @@
+<% if session[:user_id] %>
+<h1><%= @user.name %></h1>
+<h2>Email: <%= @user.email %></h2>
+<h2>Facebook UID: <%= @user.uid %></h2>
+<img src="<%= @user.image %>">
+<% else %>
+<%# <%= link_to('log in with facebook', auth_facebook_callback_path) %> %>
 <a href='/auth/facebook'>Login with Facebook</a>
+<% end %>
+
+
+
+
+<%# <a href='/auth/facebook'>Login with Faceboo k</a> %>
