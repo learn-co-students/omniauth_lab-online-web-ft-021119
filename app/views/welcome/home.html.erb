@@ -1,1 +1,5 @@
-<a href='/auth/facebook'>Login with Facebook</a>
+<% if session[:user_id] %>
+  <h1><%= @user.name %></h1>
+<% else %>
+  <a href='/auth/facebook'>Login with Facebook</a>
+<% end %>
